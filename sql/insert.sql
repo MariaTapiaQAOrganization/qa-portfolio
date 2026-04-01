@@ -9,5 +9,5 @@ VALUES
 ('juan', 'juan@gmail.com','job',NULL,'hi qa tested' ),
 ('ana', 'ana.test@gmail.com', 'information', 28, 'test message'),
 (NULL,'contact@gmail.com','job',40,'test email email'),
-('laura', 'laura@gmail.com', 'other', 19, 'message end test')
+('laura', 'laura@gmail.com', 'other', 19, 'message end test');
 
