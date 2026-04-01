@@ -14,13 +14,13 @@ SELECT * FROM form WHERE name LIKE 'a%';
 SELECT * FROM form WHERE age between 20 AND 30;
 
 --6 Filtrar por asunto job e information
-SELECT * FROM form WHERE subjet = 'job' and subjet = 'information';
+SELECT * FROM form WHERE subject = 'job' OR subject = 'information';
 
 --7 Filtrar por nombre maria o ana
 SELECT * FROM form WHERE name IN ('maria', 'ana');
 
 -- 8 Filtrar por email que contenga gmail y asunto job
-SELECT * FROM form WHERE email like '%gmail%' and subjet = 'job';
+SELECT * FROM form WHERE email like '%gmail%' and subject = 'job';
 
 --9 Filtrar por edad mayor a 30 y mensaje que contenga test
 SELECT * FROM form WHERE age >30 and message like '%test%';
