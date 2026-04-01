@@ -1,4 +1,4 @@
-INSERT INTO form (name, email, subjet, age, message)
+INSERT INTO form (name, email, subject, age, message)
 VALUES 
 ('ana', 'ana@gmail.com', 'information', NULL, 'hi testing'),
 (NULL, 'pedro@gmail.com', 'Job', 20, 'pedro message'),
