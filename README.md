@@ -1,7 +1,7 @@
 # QA Portfolio – María Tapia 
 This web portfolio showcases my QA projects, including a contact form connected to an API that stores form submissions in a database and displays them on an Admin page.
 
-🔗  [Ver Web Portfolio QA](https://mariatapiaqaorganization.github.io/qa-portfolio/)
+🔗  [QA Portfolio web](https://mariatapiaqaorganization.github.io/qa-portfolio/)
 
 
 ## ⚙️ Main Features
