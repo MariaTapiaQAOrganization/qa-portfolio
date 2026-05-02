@@ -21,8 +21,7 @@ a:hover {
 nav {
   background-color: #111;
   padding: 12px 0;
-  position: sticky;
-  top: 0;
+  position: relative; /* ← YA NO ES STICKY */
   z-index: 100;
 }
 
@@ -40,7 +39,7 @@ nav a {
   font-size: 1rem;
 }
 
-/* ===== HEADER NUEVO ALINEADO ===== */
+/* ===== HEADER ALINEADO ===== */
 .header-contenedor {
   display: flex;
   align-items: center;
@@ -76,7 +75,7 @@ nav a {
   margin-top: -5px;
 }
 
-/* ===== CARDS RETROILUMINADAS ===== */
+/* ===== CARDS ===== */
 section {
   background-color: #0a0a0a;
   padding: 30px 25px;
@@ -100,7 +99,7 @@ section:hover {
   transform: translateY(-3px);
 }
 
-/* ===== SECTION TITLES ===== */
+/* ===== TITULOS ===== */
 h2 {
   color: #ffb347;
   border-left: 4px solid #ffd97d;
@@ -108,7 +107,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* ===== LISTS ===== */
+/* ===== LISTAS ===== */
 ul {
   padding-left: 20px;
 }
@@ -117,7 +116,7 @@ li {
   margin-bottom: 6px;
 }
 
-/* ===== BUTTON ===== */
+/* ===== BOTONES ===== */
 button {
   background-color: #ffb347;
   color: #000;
@@ -133,7 +132,7 @@ button:hover {
   background-color: #ffd97d;
 }
 
-/* ===== FORM ===== */
+/* ===== FORMULARIOS ===== */
 input, select, textarea {
   width: 100%;
   padding: 10px;
@@ -158,17 +157,21 @@ footer {
   color: #ffd97d;
 }
 
-/* ===== RESPONSIVE MENU PARA MÓVIL ===== */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px 0;
-  }
+/* ========================================================= */
+/* ===== MENÚ HAMBURGUESA (MÓVIL) ===== */
+/* ========================================================= */
 
-  nav a {
-    font-size: 1.2rem;
-  }
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #ffb347;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
 
   /* Header responsive */
   .header-contenedor {
@@ -184,5 +187,34 @@ footer {
   .header-contenedor .avatar {
     width: 140px;
     height: 140px;
+  }
+
+  /* Menú hamburguesa */
+  nav {
+    position: static;
+  }
+
+  .menu-toggle {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+    background-color: #111;
+    border-bottom: 1px solid #ffb34733;
+    width: 100%; /* ← NUEVO */
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul a {
+    font-size: 1.2rem; /* ← NUEVO */
+    padding: 10px 0;
   }
 }
