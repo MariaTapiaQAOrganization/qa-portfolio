@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio María Tapia QA" />
   <meta name="author" content="María Tapia" />
-  <title>María Tapia - Portfolio</title>
+  <title>María Tapia - QA Portfolio</title>
   <link href="style.css" rel="stylesheet" />
-  <!-- Importar Font Awesome para los iconos -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
-        <!-- Menú de navegación -->
+
+  <!-- Navigation Menu -->
   <nav>
-      <ul>
-        <li><a id="menusobremi" href="#sobremi">Sobre mí</a></li>
-        <li><a id="menuproyectos" href="#proyectos">Proyectos</a></li>
-        <li><a id="menueducacion" href="#educacion">Educación</a></li>
-        <li><a id="menucontacto" href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <ul>
+      <li><a id="menusobremi" href="#sobremi">About Me</a></li>
+      <li><a id="menuproyectos" href="#proyectos">Projects</a></li>
+      <li><a id="menueducacion" href="#educacion">Education</a></li>
+      <li><a id="menucontacto" href="#contacto">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1 id="minombre">María Tapia</h1>
-    <p id="titulo">QA-JUNIOR</p>
+    <p id="titulo">QA JUNIOR</p>
     <p>
       <a id="linkgithub" href="https://github.com/Mariatm89" title="GitHub"
         class="fa fa-github fa-2x" aria-label="GitHub"></a>
@@ -32,170 +34,179 @@
         class="fa fa-linkedin fa-2x" aria-label="LinkedIn"></a>
     </p>
   </header>
+
   <main>
+
+    <!-- ABOUT ME -->
     <section id="sobremi">
       <h2 id="titulosobremi">
-        <i class="fa fa-user"></i> Sobre mí
+        <i class="fa fa-user"></i> About Me
       </h2>
-<p>
-  Soy QA en formación, actualmente realizando un bootcamp especializado en testing manual,
-  automatización y testing de APIs. Vengo del ámbito jurídico, donde desarrollé habilidades
-  clave como el análisis detallado, la gestión documental y la resolución de problemas.
-  Estoy enfocada en construir mi carrera en Quality Assurance, aplicando mis conocimientos
-  técnicos y mis competencias previas para aportar valor en entornos ágiles.
-</p>
-
-    </section>
-
-    <section id="proyectos">
-      <h2 id="tituloproyectos">
-        <i class="fa fa-folder-open"></i> Proyectos
-      </h2>
-
-      <h3>
-        <a id="linkproyectoapi" href="https://equipo3qa.atlassian.net/wiki/x/kYAC" target="_blank">Página Web</a>
-        – QA Manual y Automatización de Pruebas
-      </h3>
-      <p>
-  Realicé el aseguramiento de la calidad de una aplicación web ya desarrollada,
-  trabajando en equipo bajo <strong>metodologías ágiles Scrum</strong>. La gestión del
-  trabajo se realizó mediante <strong>sprints semanales</strong> utilizando
-  <strong>Jira</strong>, participando activamente en las ceremonias de
-  <strong>Sprint Planning</strong>, <strong>dailys</strong> y <strong>Sprint Review</strong>
-  al final de cada sprint.
-</p>
-
-<p>
-  Diseñé las pruebas de las historias de usuario siguiendo la metodología
-  <strong>BDD</strong>, partiendo de los criterios de aceptación definidos. Se crearon
-  escenarios en lenguaje <strong>Gherkin</strong> para disponer de pruebas legibles y
-  comprensibles para todo el equipo, gestionándolas con <strong>AssertThat</strong> para
-  mantener la <strong>trazabilidad</strong> entre requisitos, pruebas y resultados dentro
-  de <strong>Jira</strong>. Las pruebas se ejecutaron por historia de usuario y se
-  registraron los resultados en entornos web y móviles.
-</p>
-
-<p>
-  Durante cada sprint se realizaron <strong>pruebas funcionales</strong> y, al final del
-  mismo, <strong>pruebas exploratorias</strong> para identificar defectos no cubiertos por
-  los casos definidos. Los errores detectados se reportaron en <strong>Jira</strong>,
-  vinculándolos a la historia de usuario correspondiente para asegurar la correcta
-  trazabilidad entre requisitos, pruebas y defectos.
-</p>
-
-<p>
-  Al cierre de cada sprint se preparó la <strong>release</strong> en <strong>Jira</strong>
-  y se documentó en <strong>Confluence</strong> la información relacionada con la entrega,
-  incluyendo la documentación completa del <strong>plan de pruebas</strong>, resultados
-  de ejecución y estado de calidad del producto.
-</p>
-
-<p>
-  Tras la release, se identificaron los <strong>flujos principales</strong> de la
-  aplicación y se automatizaron las pruebas de <strong>regresión</strong> utilizando
-  <strong>Playwright</strong> y <strong>Pytest</strong> con <strong>Python</strong>. Estas
-  pruebas se integraron en un flujo de <strong>integración continua</strong> con
-  <strong>GitHub Actions</strong>, configurado para ejecutar automáticamente la regresión
-  de forma semanal, alineada con el cierre de cada sprint.
-</p>
-      <h3>
-        <a id="linkproyectoportafolio" href="https://github.com/MariaTapiaQAOrganization/qa-portfolio">Portafolio QA</a>
-        – Desarrolladora Web y QA en Testing de APIs
-      </h3>
-     <p>
-  Desarrollé un portafolio web utilizando <strong>HTML5</strong>, <strong>CSS3</strong> y
-  <strong>JavaScript</strong>, integrando un formulario conectado a una
-  <strong>API</strong> generada con <strong>Supabase</strong>. Se diseñaron las tablas
-  de la base de datos y se realizaron consultas en <strong>SQL</strong> para la
-  inserción y consulta de datos de prueba del formulario.
-</p>
-
-<p>
-  Realicé <strong>testing de APIs</strong> utilizando <strong>Postman</strong>, creando
-  pruebas para las peticiones <strong>GET</strong> (consulta),
-  <strong>POST</strong> (creación), <strong>PATCH</strong> (edición) y
-  <strong>DELETE</strong> (eliminación). Se implementaron tests que validan códigos de
-  respuesta positivos, negativos y de <strong>autenticación</strong>, así como la
-  correcta estructura y contenido de las respuestas.
-</p>
-
-<p>
-  Además, se implementó un flujo de <strong>integración continua</strong> con
-  <strong>GitHub Actions</strong>, configurando <strong>Newman</strong> para ejecutar
-  automáticamente las pruebas creadas en <strong>Postman</strong> en cada cambio del
-  repositorio.
-</p>
-      
-    </section>
-
-    <section id="educacion">
-      <h2 id="tituloeducacion">
-        <i class="fa fa-graduation-cap"></i> Educación
-      </h2>
-
-      <h3><i class="fa fa-laptop"></i> Bootcamp QA – Adalab: Academia de Formación</h3>
-<p><strong>Febrero 2026 – Mayo 2026</strong></p>
-<p>
-  Formación intensiva en <strong>Quality Assurance</strong> basada en fundamentos de
-  <strong>ISTQB</strong>, incluyendo <strong>técnicas y tipos de pruebas</strong>.
-  Diseño y <strong>gestión de casos de prueba</strong> utilizando
-  <strong>BDD</strong> y <strong>Gherkin</strong>, con seguimiento de pruebas y defectos
-  en <strong>Jira</strong> y documentación del <strong>plan de pruebas</strong> en
-  <strong>Confluence</strong>. Trabajo bajo <strong>metodologías ágiles (Scrum)</strong>.
-  <strong>Testing de APIs</strong> con <strong>Postman</strong>, validación de datos
-  mediante <strong>SQL</strong> y automatización de pruebas con <strong>Python</strong>,
-  <strong>Playwright</strong> y <strong>Pytest</strong>. Integración continua con
-  <strong>GitHub Actions</strong>.
-</p>
-      <h3><i class="fa fa-university"></i> Licenciatura en Derecho – Universidad de Málaga</h3>
-      <p><strong>Septiembre 2007 - Junio 2012</strong></p>
 
       <p>
-      Formación en derecho <strong>civil</strong>, <strong>penal</strong>, <strong>laboral</strong> y <strong>mercantil</strong>. 
-  Desarrollo de <strong>habilidades analíticas</strong>, <strong>gestión documental</strong> y 
-  <strong>resolución de problemas</strong>. Experiencia en la <strong>interpretación de información compleja</strong> y en la 
-  <strong>detección de inconsistencias</strong>, competencias que aplico actualmente en mi formación como <strong>QA</strong>.
+        I am a Junior QA with hands-on experience in manual testing,
+        <strong>Playwright (Python)</strong> automation, and API testing using
+        <strong>Postman</strong>. I come from a legal background, where I developed
+        strong analytical skills, attention to detail, and problem‑solving abilities.
+        I am highly organized, quick to learn, and focused on delivering high‑quality
+        results. I aim to contribute to agile teams by applying solid testing
+        practices and ensuring reliable, user‑centered products.
       </p>
     </section>
 
-<section id="contacto">
-  <h2 id="titulocontacto">
-    <i class="fa fa-envelope"></i> Contacto
-  </h2>
-  <form id="contactForm" onsubmit="enviarFormulario(event)">
-    <input id="nombre" type="text" placeholder="Nombre" />
-    <input 
-      id="email" 
-      type="email" 
-      placeholder="Email" 
-      required
-    />
-    <select id="asunto" required>
-      <option value="">---</option>
-      <option value="info">Información</option>
-      <option value="job">Oferta Trabajo</option>
-      <option value="other">Otro</option>
-    </select>
-    <textarea 
-      id="mensaje" 
-      rows="4" 
-      placeholder="Escribe tu mensaje"
-      required
-      maxlength="500"
-    ></textarea>
-    <button id="enviar" type="submit">
-      <i class="fa fa-paper-plane"></i> Enviar
-    </button>
-  </form>
+    <!-- PROJECTS -->
+    <section id="proyectos">
+      <h2 id="tituloproyectos">
+        <i class="fa fa-folder-open"></i> Projects
+      </h2>
 
-  <p id="formMessage"></p>
-</section>
+      <!-- PROJECT 1 -->
+      <h3>
+        <a id="linkproyectoapi" href="https://equipo3qa.atlassian.net/wiki/x/kYAC" target="_blank">
+          Web Application
+        </a>
+        – Manual QA and Test Automation
+      </h3>
 
+      <p>
+        I performed quality assurance for a fully developed web application, working
+        collaboratively within an <strong>Agile Scrum</strong> environment. The team
+        operated in <strong>weekly sprints</strong> using <strong>Jira</strong> to
+        manage tasks and participated in ceremonies such as
+        <strong>Sprint Planning</strong>, <strong>Daily Stand-ups</strong>, and
+        <strong>Sprint Reviews</strong>.
+      </p>
 
+      <p>
+        I designed test cases for user stories using the <strong>BDD</strong>
+        methodology, based on clearly defined acceptance criteria. Test scenarios
+        were written in <strong>Gherkin</strong> and managed with
+        <strong>AssertThat</strong> to maintain <strong>traceability</strong> between
+        requirements, tests, and results within <strong>Jira</strong>. Tests were
+        executed across both web and mobile environments.
+      </p>
+
+      <p>
+        Throughout each sprint, I performed <strong>functional testing</strong> and
+        conducted <strong>exploratory testing</strong> at the end of the sprint to
+        identify defects not covered by predefined test cases. All defects were
+        reported in <strong>Jira</strong> and linked to their corresponding user
+        stories to ensure full traceability.
+      </p>
+
+      <p>
+        At the end of each sprint, I contributed to the <strong>release</strong>
+        preparation in <strong>Jira</strong> and documented all relevant information
+        in <strong>Confluence</strong>, including the <strong>test plan</strong>,
+        execution results, and overall product quality status.
+      </p>
+
+      <p>
+        After the release, I identified the main application flows and automated the
+        <strong>regression tests</strong> using <strong>Playwright</strong> and
+        <strong>Pytest</strong> with <strong>Python</strong>. These automated tests
+        were integrated into a <strong>continuous integration</strong> pipeline using
+        <strong>GitHub Actions</strong>, configured to run weekly regression suites
+        aligned with sprint closures.
+      </p>
+
+      <!-- PROJECT 2 -->
+      <h3>
+        <a id="linkproyectoportafolio" href="https://github.com/MariaTapiaQAOrganization/qa-portfolio">
+          QA Portfolio
+        </a>
+        – Web Development & API Testing
+      </h3>
+
+      <p>
+        I developed a personal QA portfolio using <strong>HTML5</strong>,
+        <strong>CSS3</strong>, and <strong>JavaScript</strong>, integrating a contact
+        form connected to an <strong>API</strong> built with <strong>Supabase</strong>.
+        I designed the database tables and performed <strong>SQL</strong> queries to
+        insert and retrieve test data.
+      </p>
+
+      <p>
+        I carried out <strong>API testing</strong> using <strong>Postman</strong>,
+        creating tests for <strong>GET</strong>, <strong>POST</strong>,
+        <strong>PATCH</strong>, and <strong>DELETE</strong> requests. The tests
+        validated positive and negative response codes, authentication behavior, and
+        the correctness of the JSON structure and content.
+      </p>
+
+      <p>
+        Additionally, I implemented a <strong>continuous integration</strong> workflow
+        using <strong>GitHub Actions</strong>, configuring <strong>Newman</strong> to
+        automatically execute the Postman test collection on every repository update.
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="educacion">
+      <h2 id="tituloeducacion">
+        <i class="fa fa-graduation-cap"></i> Education
+      </h2>
+
+      <h3><i class="fa fa-laptop"></i> QA Bootcamp – Adalab: Tech Academy</h3>
+      <p><strong>February 2026 – May 2026</strong></p>
+
+      <p>
+        Intensive training in <strong>Quality Assurance</strong> based on
+        <strong>ISTQB</strong> foundations, including <strong>testing techniques</strong>
+        and <strong>test types</strong>. Experience in designing and managing
+        <strong>test cases</strong> using <strong>BDD</strong> and
+        <strong>Gherkin</strong>, tracking defects in <strong>Jira</strong>, and
+        documenting the <strong>test plan</strong> in <strong>Confluence</strong>.
+        Hands-on practice with <strong>API testing</strong> using <strong>Postman</strong>,
+        data validation with <strong>SQL</strong>, and test automation with
+        <strong>Python</strong>, <strong>Playwright</strong>, and <strong>Pytest</strong>.
+        Continuous integration setup using <strong>GitHub Actions</strong>.
+      </p>
+
+      <h3><i class="fa fa-university"></i> Law Degree – University of Málaga</h3>
+      <p><strong>September 2007 – June 2012</strong></p>
+
+      <p>
+        Academic background in <strong>civil</strong>, <strong>criminal</strong>,
+        <strong>labor</strong>, and <strong>commercial law</strong>. Developed strong
+        <strong>analytical skills</strong>, <strong>document management</strong>, and
+        <strong>problem‑solving abilities</strong>. Experienced in interpreting complex
+        information and identifying inconsistencies—skills that I now apply in my work
+        as a <strong>QA</strong>.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacto">
+      <h2 id="titulocontacto">
+        <i class="fa fa-envelope"></i> Contact
+      </h2>
+
+      <form id="contactForm" onsubmit="enviarFormulario(event)">
+        <input id="nombre" type="text" placeholder="Name" />
+        <input id="email" type="email" placeholder="Email" required />
+        <select id="asunto" required>
+          <option value="">---</option>
+          <option value="info">Information</option>
+          <option value="job">Job Offer</option>
+          <option value="other">Other</option>
+        </select>
+        <textarea id="mensaje" rows="4" placeholder="Write your message" required maxlength="500"></textarea>
+        <button id="enviar" type="submit">
+          <i class="fa fa-paper-plane"></i> Send
+        </button>
+      </form>
+
+      <p id="formMessage"></p>
+    </section>
+
+  </main>
 
   <footer>
     <p>&copy; All rights reserved.</p>
   </footer>
+
+  <script src="script.js" defer></script>
 </body>
-<script src="script.js" defer></script>
+
 </html>
