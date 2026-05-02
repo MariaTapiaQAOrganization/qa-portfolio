@@ -157,3 +157,32 @@ footer {
   background-color: #111;
   color: #ffd97d;
 }
+
+/* ===== RESPONSIVE MENU PARA MÓVIL ===== */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  /* Header responsive */
+  .header-contenedor {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .header-texto {
+    text-align: center;
+  }
+
+  .header-contenedor .avatar {
+    width: 140px;
+    height: 140px;
+  }
+}
